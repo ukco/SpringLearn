@@ -7,6 +7,10 @@
     <groupId>com.itheima</groupId>
     <artifactId>SpringLearn</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
+    <modules>
+        <module>day01_eesy_01jdbc</module>
+    </modules>
 
 </project>

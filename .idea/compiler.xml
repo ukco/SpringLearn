@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SpringLearn" />
+        <module name="day01_eesy_01jdbc" />
       </profile>
     </annotationProcessing>
   </component>
