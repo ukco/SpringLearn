@@ -32,15 +32,15 @@ public class JdbcDemo1 {
         //如果没有com.mysql.jdbc.Driver驱动类，直接编译错误 -----编译期
         Class.forName("com.mysql.jdbc.Driver");
         // 2.获取连接
-        // Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/eesy?useUnicode=true&characterEncoding=utf8","root","ukco1997");
-        Connection conn = DriverManager.getConnection("jdbc:mysql://aifuture.uestc.cn:11306/que?useSSL=false&useUnicode=true&characterEncoding=utf-8&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai","deepeduadmin","Admin@2019");
+        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/db2019?useUnicode=true&characterEncoding=utf8","root","root");
+        // Connection conn = DriverManager.getConnection("jdbc:mysql://aifuture.uestc.cn:11306/que?useSSL=false&useUnicode=true&characterEncoding=utf-8&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai","deepeduadmin","Admin@2019");
         // 3.获取操作数据库的预处理对象
-        PreparedStatement pstm = conn.prepareStatement("select * from knowledge_error_type");
+        PreparedStatement pstm = conn.prepareStatement("select * from payment");
         // 4.执行SQL，得到结果集
         ResultSet rs = pstm.executeQuery();
         // 5.遍历结果集
         while (rs.next()) {
-            System.out.println(rs.getString("category1"));
+            System.out.println(rs.getString("serial"));
         }
         // 6.释放资源
         rs.close();
