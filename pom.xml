@@ -16,6 +16,7 @@
         <module>day01_eesy_04bean</module>
         <module>day01_eesy_05DI</module>
         <module>day02_eesy_01anno_ioc</module>
+        <module>day02__eesy__02account_xmlioc</module>
     </modules>
 
 </project>
